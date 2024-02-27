@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <packaging>jar</packaging>
+  <name>CX :: PA Annotation Processor</name>
+
+  <properties>
+    <cx-util.version>1.0.0</cx-util.version>
+    <cx-pa.version>1.0.0</cx-pa.version>
+  </properties>
+
+  <groupId>de.conxult</groupId>
+  <artifactId>pa-annotation-processor</artifactId>
+  <version>1.0.0</version>
+
+  <parent>
+    <groupId>de.conxult</groupId>
+    <artifactId>quarkus</artifactId>
+    <version>3.7.4</version>
+  </parent>
+
+  <dependencies>
+    <dependency>
+      <groupId>de.conxult</groupId>
+      <artifactId>util</artifactId>
+      <version>${cx-util.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>de.conxult</groupId>
+      <artifactId>pa-annotations</artifactId>
+      <version>${cx-pa.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-resteasy-reactive</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-openapi</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>de.conxult</groupId>
+      <artifactId>annotation-processor</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+  </dependencies>
+
+</project>
